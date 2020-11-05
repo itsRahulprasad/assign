@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">pirates</string>
+    <string name="paatham_public_school">Paatham Public School</string>
+    <string name="change_password">change password</string>
+
+    <string name="type_your_password">type your password</string>
+    <string name="old_password">old password</string>
+    <string name="new_password">New Password</string>
+    <string name="type_your_new_password">Type your new password</string>
+    <string name="type_your_new_password_again">type your new password again</string>
+</resources>
