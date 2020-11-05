@@ -7,16 +7,14 @@
     tools:context=".MainActivity">
 
 
-
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
+        tools:ignore="UselessParent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/toolbar_first"
@@ -26,7 +24,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_school_24" />
+            android:src="@drawable/ic_baseline_school_24"
+
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +36,8 @@
             android:textSize="18sp"
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"> </TextView>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -45,9 +46,12 @@
             android:layout_marginRight="20dp"
             android:src="@drawable/ic_baseline_person_24"
             android:layout_marginEnd="20dp"
-            tools:ignore="RtlHardcoded" />
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="@string/todo"> </ImageView>
+
 
         </androidx.appcompat.widget.Toolbar>
+
 
 
 
@@ -56,7 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/change_password"
+            android:text="Change Password"
             android:layout_gravity="center"
             android:textColor="@color/toolbar_first"
             android:textSize="18sp"
@@ -67,123 +71,114 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/old_password"
+            android:text="Old Password"
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textAlignment="center"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
-            />
+            android:layout_marginLeft="20dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundtext"
-            android:hint="@string/type_your_password"
             android:height="38dp"
             android:layout_marginStart="20dp"
             android:layout_gravity="center"
-            android:textAlignment="center"
             android:layout_marginEnd="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
             />
 
-        <TextView
+
+
+
+
+            <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/new_password"
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_marginTop="12dp"
-            />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+
+                android:layout_marginLeft="20dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundtext"
-            android:hint="@string/type_your_new_password"
             android:height="38dp"
             android:layout_marginStart="20dp"
             android:layout_gravity="center"
-            android:textAlignment="center"
             android:layout_marginEnd="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
-            />
+           />
+
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Re - Enter Your New Password"
+            android:text="Confirm Password"
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+
+            android:layout_marginLeft="20dp" />
+
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/roundtext"
-            android:hint="@string/type_your_new_password_again"
-            android:height="38dp"
-            android:layout_marginStart="20dp"
             android:layout_gravity="center"
-            android:textAlignment="center"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:height="38dp"
+            android:background="@drawable/roundtext"
             tools:ignore="LabelFor" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:gravity="center"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-
+            android:text="@string/submit"
+            android:backgroundTint="@color/toolbar_first"
             />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/rahul"
+    android:layout_height="match_parent"
+    >
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/sec22"-->
+<!--        android:scaleType="fitXY"-->
+<!--        />-->
 
-            >
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/changepasspic"
-
-
-                />
-
-
-        </LinearLayout>
-
+</RelativeLayout>
 
 
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>
+
+
